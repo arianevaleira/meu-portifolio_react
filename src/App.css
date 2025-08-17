@@ -1,0 +1,340 @@
+body {
+  font-family: 'Inter', sans-serif;
+  background: #fdfcfa;
+  color: #3a3a3a;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  padding: 2rem 1rem;
+}
+
+.cabecalho {
+  background: #fff0f6;
+  border-bottom: 1px solid #f5dce8;
+  backdrop-filter: blur(10px);
+  width: 100vw;
+  position: sticky;
+  top: 0;
+  padding: 1.5rem;
+  z-index: 50;
+}
+
+section h2 {
+  color: #b44aa0;
+  position: relative;
+  margin-bottom: 2rem;
+  font-size: 1.6rem;
+  text-align: center;
+}
+.container1 {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero {
+  background: linear-gradient(135deg, #ffe6f0, #fff0f6, #fff);
+  padding: 6rem 1rem;
+  text-align: center;
+}
+
+.hero > div {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+section {
+  width: 100vw;
+  margin: 4rem 0;
+  padding: 2rem 1rem;
+}
+
+section > div {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+footer {
+  background: #fff0f6;
+  color: #6d6d6d;
+  padding: 2rem 1rem;
+  text-align: center;
+  width: 100vw;
+}
+
+footer > div {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cabecalho h1 {
+  font-family: 'Sora', sans-serif;
+  color: #e35d8b;
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.cabecalho nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.cabecalho nav button {
+  background: none;
+  border: none;
+  color: #6d6d6d;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0.5rem 0;
+}
+
+.cabecalho nav button:hover {
+  color: #e35d8b;
+  transform: scale(1.05);
+}
+
+.hero h2 {
+  color: #b44aa0;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero p {
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  font-size: 1.1rem;
+}
+
+.hero button {
+  background: #e35d8b;
+  color: white;
+  border: none;
+  border-radius: 999px;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(227, 93, 139, 0.3);
+  transition: all 0.3s ease;
+}
+
+.hero button:hover {
+  background: #d14c7c;
+  transform: translateY(-2px);
+}
+
+#sobre .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+#sobre .grid > div {
+  background: #ffffff;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+#habilidades .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.badge {
+  background: #ffe6f0;
+  color: #b44aa0;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.badge:hover {
+  background: #fdd6e4;
+  transform: translateY(-2px);
+}
+
+#projetos .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #b44aa0;
+}
+
+.card p {
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+.card a {
+  color: #e35d8b;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.card a:hover {
+  color: #b44aa0;
+  text-decoration: underline;
+}
+
+#contato .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+#contato .card {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+#contato .card i {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #e35d8b;
+}
+
+#contato .card h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+#contato .card a {
+  color: #555;
+  transition: color 0.3s ease;
+}
+
+#contato .card a:hover {
+  color: #e35d8b;
+}
+
+#contato button {
+  margin-top: 2rem;
+  background: #e35d8b;
+  color: white;
+  border: none;
+  border-radius: 999px;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(227, 93, 139, 0.3);
+  transition: all 0.3s ease;
+}
+
+#contato button:hover {
+  background: #d14c7c;
+  transform: translateY(-2px);
+}
+
+
+.texto{
+  font-size: 1.2rem;
+  color: #e400ab;
+  margin-top: 1rem; 
+  
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  background: #e35d8b;
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(227, 93, 139, 0.3);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.back-to-top:hover {
+  background: #d14c7c;
+  transform: translateY(-3px);
+}
+
+@media (max-width: 768px) {
+  .cabecalho {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .cabecalho nav {
+    margin-top: 1rem;
+  }
+
+  .hero {
+    padding: 4rem 1rem;
+  }
+
+  .hero h2 {
+    font-size: 2rem;
+  }
+
+  section h2 {
+    font-size: 1.75rem;
+  }
+
+  #contato .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .cabecalho h1 {
+    font-size: 1.5rem;
+  }
+
+  .cabecalho nav {
+    gap: 1rem;
+  }
+
+  .hero h2 {
+    font-size: 1.75rem;
+  }
+
+  #habilidades .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
