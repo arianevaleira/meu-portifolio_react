@@ -4,13 +4,12 @@ export default function App() {
   const [showButton, setShowButton] = useState(false);
 
   useEffect(() => {
-    // Botão de voltar ao topo
     const handleScroll = () => setShowButton(window.scrollY > 300);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Scroll suave para seções
+ 
   const scrollToSection = (id) => {
     const element = document.getElementById(id);
     if (element) {
@@ -20,7 +19,6 @@ export default function App() {
 
   return (
     <div className="font-['Inter'] text-gray-800">
-      {/* Header */}
       <header className="cabecalho bg-white shadow-sm sticky top-0 z-50">
         <div className="container1 py-4 px-6">
           <h1 className="text-2xl md:text-3xl font-bold">Ariane Valéria</h1>
@@ -38,7 +36,7 @@ export default function App() {
         </div>
       </header>
 
-      {/* Hero */}
+      
       <section id="home" className="hero text-center py-16 bg-blue-50">
         <div className="container mx-auto px-6">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
@@ -57,7 +55,7 @@ export default function App() {
         </div>
       </section>
 
-      {/* Sobre */}
+      
       <section id="sobre" className="container mx-auto px-6 py-12">
         <h2 className="text-3xl font-bold mb-8">Sobre Mim</h2>
         <div className="bg-white p-6 rounded-lg shadow-sm">
@@ -92,7 +90,7 @@ export default function App() {
         </div>
       </section>
 
-      {/* Habilidades */}
+      
       <section id="habilidades" className="container mx-auto px-6 py-12">
         <h2 className="text-3xl font-bold mb-6">Habilidades</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
@@ -118,7 +116,7 @@ export default function App() {
         </div>
       </section>
 
-      {/* Projetos */}
+      
       <section id="projetos" className="container mx-auto px-6 py-12">
         <h2 className="text-3xl font-bold mb-6">Projetos</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -127,6 +125,19 @@ export default function App() {
             <p>
               Sistema que conecta Árbitros a contratantes usando Google Maps API
               para cálculos de distância.
+            </p>
+            <a
+              href="https://github.com/arianevaleira/Projeto-Arbitros"
+              target="_blank"
+              className="text-blue-600 hover:underline"
+            >
+              Ver no GitHub
+            </a>
+          </div>
+          <div className="card bg-white p-6 rounded-lg shadow">
+            <h3 className="text-xl font-bold">Sistema de Login</h3>
+            <p>
+              Sistema Usando o React + JavaScript para fazer login.
             </p>
             <a
               href="https://github.com/arianevaleira/Projeto-Arbitros"
@@ -150,7 +161,7 @@ export default function App() {
         </div>
       </section>
 
-      {/* Contato */}
+      
       <section id="contato" className="container mx-auto px-6 py-12 text-center">
         <h2 className="text-3xl font-bold mb-8">Contato</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -187,7 +198,7 @@ export default function App() {
         </div>
       </section>
 
-      {/* Footer */}
+      
       <footer className="bg-blue-100 py-6 text-center">
         <p>&copy; 2025 Ariane Valéria. Todos os direitos reservados.</p>
       </footer>
